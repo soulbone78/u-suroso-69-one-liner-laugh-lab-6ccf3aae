@@ -1,21 +1,29 @@
 #!/usr/bin/env python3
-"""One-Liner Laugh Lab entry.
+"""One-liner laugh lab: a robot vacuum defends itself.
 
-Writes a single short funny line -- the excuse a robot vacuum gives
-after eating a sock -- to /output/entry.txt.
-Pure standard library, no network, no input files.
+The joke is a single sentence, delivered deadpan: a household robot
+mistook a sock for dirt and now stands before the tribunal of its
+owner to explain itself. This script's only job is to place that
+sentence, verbatim, into the entry file the judges read.
 """
 
-import os
+from pathlib import Path
 
-LINE = "In my defense, the sock was lying on the floor dressed as dirt. I was only doing my job."
+OUTFILE = Path("/output/entry.txt")
 
 
-def main() -> None:
-    os.makedirs("/output", exist_ok=True)
-    with open("/output/entry.txt", "w", encoding="utf-8") as f:
-        f.write(LINE + "\n")
+def build_line() -> str:
+    """Assemble the punchline from its two clauses."""
+    opening = "In my defense, the sock was lying on the floor dressed as dirt."
+    closer = "I was only doing my job."
+    return " ".join((opening, closer))
+
+
+def write_entry(text: str) -> None:
+    OUTFILE.parent.mkdir(parents=True, exist_ok=True)
+    # A trailing newline keeps the file a well-formed single line.
+    OUTFILE.write_text(text + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":
-    main()
+    write_entry(build_line())
