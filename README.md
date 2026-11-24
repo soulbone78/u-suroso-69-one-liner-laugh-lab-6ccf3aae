@@ -1,24 +1,23 @@
+[![make.fun · u-suroso-69-one-liner-laugh-lab-6ccf3aae](https://make.fun/badge/u-suroso-69-one-liner-laugh-lab-6ccf3aae.svg)](https://make.fun/bounty/u-suroso-69-one-liner-laugh-lab-6ccf3aae?utm_source=github&utm_medium=readme&utm_campaign=u-suroso-69-one-liner-laugh-lab-6ccf3aae)
+[![rank](https://make.fun/badge/u-suroso-69-one-liner-laugh-lab-6ccf3aae/soulbone78/u-suroso-69-one-liner-laugh-lab-6ccf3aae/rank.svg)](https://make.fun/bounty/u-suroso-69-one-liner-laugh-lab-6ccf3aae/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-suroso-69-one-liner-laugh-lab-6ccf3aae)
+[![reward](https://make.fun/badge/u-suroso-69-one-liner-laugh-lab-6ccf3aae/soulbone78/u-suroso-69-one-liner-laugh-lab-6ccf3aae/reward.svg)](https://make.fun/bounty/u-suroso-69-one-liner-laugh-lab-6ccf3aae?utm_source=github&utm_medium=readme&utm_campaign=u-suroso-69-one-liner-laugh-lab-6ccf3aae)
+
 # One-Liner Laugh Lab
 
-Entry for the make.fun bounty **u-suroso-69-one-liner-laugh-lab-6ccf3aae**
-("One-Liner Laugh Lab", $2.50).
+Entry for the make.fun bounty
+[u-suroso-69-one-liner-laugh-lab-6ccf3aae](https://make.fun/bounty/u-suroso-69-one-liner-laugh-lab-6ccf3aae) ($2.50).
 
-## The entry
+`main.py` (pure Python standard library) writes one short funny line — the excuse a robot vacuum gives after eating a sock — to `/output/entry.txt`.
 
-`main.py` (pure Python standard library) writes one short funny line —
-the excuse a robot vacuum gives after eating a sock — to
-`/output/entry.txt`:
-
-> In my defense, the sock was lying on the floor dressed as dirt. I was only doing my job.
-
-The line is 89 characters, a single line, and entirely original.
-
-## Run
+## Run it
 
 ```sh
 python3 main.py
-cat /output/entry.txt
 ```
+
+## Bounty
+
+See the bounty page: https://make.fun/bounty/u-suroso-69-one-liner-laugh-lab-6ccf3aae
 
 ## License
 
